@@ -28,8 +28,8 @@
     "url": "git+ssh://git@github.com/join-com/request-limit.git"
   },
   "keywords": [
-    "env",
-    "required"
+    "request",
+    "limit"
   ],
   "author": "JOIN team",
   "license": "MIT",
