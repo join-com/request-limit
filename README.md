@@ -15,6 +15,6 @@ const requestLimit = new RequestLimit(REQUESTS_LIMIT, REQUESTS_LIMIT_TIMEOUT, RE
 
 // Function will be limited to 5 requests per 10 seconds
 const request = requestLimit.setLimit(
-  () => { // Do something }
+  () => { /* Do something */ }
 )
 ```
