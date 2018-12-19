@@ -1,6 +1,6 @@
 {
   "name": "@join-com/request-limit",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Limits number of function call per time frame",
   "main": "lib/index.js",
   "scripts": {
