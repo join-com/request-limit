@@ -1,0 +1,49 @@
+{
+  "name": "@join-com/request-limit",
+  "version": "1.0.1",
+  "description": "Limits number of function call per time frame",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint -p .",
+    "prepublish": "tsc"
+  },
+  "lint-staged": {
+    "*.{ts,md}": [
+      "yarn prettier --write",
+      "git add"
+    ],
+    "src/**/*.ts": [
+      "npm run lint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsc --noEmit && lint-staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/join-com/request-limit.git"
+  },
+  "keywords": [
+    "env",
+    "required"
+  ],
+  "author": "JOIN team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/join-com/request-limit/issues"
+  },
+  "homepage": "https://github.com/join-com/request-limit#readme",
+  "devDependencies": {
+    "@types/node": "^10.12.17",
+    "husky": "^1.3.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
+  }
+}
